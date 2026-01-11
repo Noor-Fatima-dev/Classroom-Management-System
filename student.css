@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("grid.png");
+    color: #4a2e1f;
+}
+
+
+.student-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.student-sidebar {
+    width: 220px;
+    background: #6b4423;
+    color: #fff8e7; 
+    padding: 25px 15px;
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.student-sidebar ul {
+    list-style: none;
+}
+
+.student-sidebar li {
+    padding: 12px 8px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.student-sidebar li:hover,
+.student-sidebar li.active {
+    background: #8b5a2b;
+}
+
+
+.student-main {
+    flex: 1;
+    padding: 30px 40px;
+}
+
+
+.student-header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.student-header p {
+    color: #6b4423;
+    margin-bottom: 30px;
+}
+
+
+.student-donuts {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.donut-card {
+    text-align: center;
+}
+
+.donut {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 15px auto;
+    font-weight: bold;
+    font-size: 22px;
+    color: #6b4423;
+}
+
+.attendance {
+    background: conic-gradient(#d97706 92%, #f1e6d8 0);
+}
+
+.assignments {
+    background: conic-gradient(#8b5a2b 75%, #f1e6d8 0);
+}
+
+.donut span {
+    background-image: url("grid.png");
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+
+.student-panels {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.panel {
+    flex: 1;
+    background: #fff8e7;
+    border: 2px solid #e5d4c1;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.panel h3 {
+    margin-bottom: 15px;
+}
+
+.panel ul {
+    list-style: none;
+}
+
+.panel li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5d4c1;
+    font-size: 14px;
+}
+
+
+.extra-stats {
+    display: flex;
+    gap: 30px;
+}
+
+.stat-box {
+    flex: 1;
+    background: #fff8e7;
+    border: 2px solid #e5d4c1;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.stat-box span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d97706;
+}
+a {
+    color: #e5d4c1;
+    text-decoration: none;
+}
+
+@media(max-width: 1024px){
+    .student-donuts,
+    .student-panels,
+    .extra-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
